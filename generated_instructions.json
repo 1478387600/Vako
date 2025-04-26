@@ -1,0 +1,3862 @@
+[
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the bedroom light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the bedroom light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on",
+          "timestamp": "2025-04-26T03:06:03"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Can you close the living room curtains, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will close the living room curtains.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_curtains",
+            "status": "closed"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_curtains",
+          "type": "device",
+          "status": "Device living_room_curtains turned closed",
+          "timestamp": "2025-04-26T03:06:17"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room curtains have been closed."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Would you mind opening the kitchen blinds for me?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll open the kitchen blinds.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_blinds",
+            "status": "open"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_blinds",
+          "type": "device",
+          "status": "Device kitchen_blinds turned open",
+          "timestamp": "2025-04-26T03:06:32"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen blinds have been opened."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you check if it's raining outside, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Checking the outdoor weather sensor for rain.",
+          "type": "tool",
+          "name": "get_status",
+          "arguments": {
+            "device_id": "outdoor_weather_sensor"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "outdoor_weather_sensor",
+          "type": "sensor",
+          "status": "26.8",
+          "timestamp": "2025-04-26T03:06:46"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The outdoor temperature is currently 26.8°C."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Can you set the living room AC to 22 degrees, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Setting the living room AC to 22 degrees.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_ac",
+            "status": "on",
+            "level": 22
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_ac",
+          "type": "device",
+          "status": "Device living_room_ac turned on",
+          "timestamp": "2025-04-26T03:07:01"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room air conditioner has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the hallway light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn off the hallway light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "hallway_light",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "hallway_light",
+          "type": "device",
+          "status": "Device hallway_light turned off",
+          "timestamp": "2025-04-26T03:07:16"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The hallway light is currently turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the air purifier in the living room, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the air purifier in the living room.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_air_purifier",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_air_purifier",
+          "type": "device",
+          "status": "Device living_room_air_purifier turned on",
+          "timestamp": "2025-04-26T03:07:32"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room air purifier has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Can you open the bedroom window, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will open the bedroom window.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_window",
+            "status": "open"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_window",
+          "type": "device",
+          "status": "Device bedroom_window turned open",
+          "timestamp": "2025-04-26T03:07:47"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom window is now open."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the kitchen light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the kitchen light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_light",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_light",
+          "type": "device",
+          "status": "Device kitchen_light turned on",
+          "timestamp": "2025-04-26T03:08:02"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you check the indoor temperature for me, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll check the indoor temperature for you.",
+          "type": "tool",
+          "name": "get_status",
+          "arguments": {
+            "device_id": "indoor_temp_sensor"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "indoor_temp_sensor",
+          "type": "sensor",
+          "status": "22.8",
+          "timestamp": "2025-04-26T03:08:15"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The indoor temperature is currently 22.8°C."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the TV in the living room, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn off the TV in the living room.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_tv",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "device",
+          "status": "Device living_room_tv turned off",
+          "timestamp": "2025-04-26T03:08:29"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room TV has been turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you adjust the bedroom AC to 24 degrees, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the bedroom AC to 24 degrees.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_ac",
+            "status": "on",
+            "level": 24
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_ac",
+          "type": "device",
+          "status": "Device bedroom_ac turned on",
+          "timestamp": "2025-04-26T03:08:44"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom air conditioner has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you close the bathroom window, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will close the bathroom window.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bathroom_window",
+            "status": "closed"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bathroom_window",
+          "type": "device",
+          "status": "Device bathroom_window turned closed",
+          "timestamp": "2025-04-26T03:08:59"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bathroom window is now closed."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the main air purifier, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn on the main air purifier.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "main_air_purifier",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "main_air_purifier",
+          "type": "device",
+          "status": "Device main_air_purifier turned on",
+          "timestamp": "2025-04-26T03:09:15"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The main air purifier has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you raise the kitchen blinds halfway, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll adjust the kitchen blinds to halfway.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_blinds",
+            "status": "on",
+            "level": 50
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_blinds",
+          "type": "device",
+          "status": "Device kitchen_blinds turned on",
+          "timestamp": "2025-04-26T03:09:29"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen blinds have been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the bedroom air conditioner, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn off the bedroom air conditioner.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_ac",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_ac",
+          "type": "device",
+          "status": "Device bedroom_ac turned off",
+          "timestamp": "2025-04-26T03:09:44"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom air conditioner is currently turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you check the outdoor temperature for me, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Checking the outdoor temperature sensor.",
+          "type": "tool",
+          "name": "get_status",
+          "arguments": {
+            "device_id": "outdoor_temp_sensor"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "outdoor_temp_sensor",
+          "type": "sensor",
+          "status": "24.5",
+          "timestamp": "2025-04-26T03:09:58"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The outdoor temperature is currently 24.5°C."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you lower the living room blinds a bit, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the living room blinds.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_blinds",
+            "status": "lower",
+            "level": "partial"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_blinds",
+          "type": "device",
+          "status": "Device living_room_blinds turned lower",
+          "timestamp": "2025-04-26T03:10:12"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room blinds have been lowered."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the kitchen light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn off the kitchen light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_light",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_light",
+          "type": "device",
+          "status": "Device kitchen_light turned off",
+          "timestamp": "2025-04-26T03:10:27"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen light is currently turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the living room TV, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the living room TV.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_tv",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "device",
+          "status": "Device living_room_tv turned on",
+          "timestamp": "2025-04-26T03:10:43"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room TV has been successfully turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom air conditioner to 20 degrees, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Setting the bedroom air conditioner to 20 degrees.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_ac",
+            "status": "on",
+            "level": 20
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_ac",
+          "type": "device",
+          "status": "Device bedroom_ac turned on",
+          "timestamp": "2025-04-26T03:10:58"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom air conditioner has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you open the bedroom window slightly, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Understood, I will open the bedroom window slightly.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_window",
+            "status": "open",
+            "level": "slightly"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_window",
+          "type": "device",
+          "status": "Device bedroom_window turned open",
+          "timestamp": "2025-04-26T03:11:12"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom window is now open."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the purifier in the living room, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn on the air purifier in the living room.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_purifier",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_purifier",
+          "type": "device",
+          "status": "Device living_room_purifier turned on",
+          "timestamp": "2025-04-26T03:11:30"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room air purifier has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you check the current power usage for me, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "I'll check the current power usage for you.",
+          "type": "tool",
+          "name": "get_status",
+          "arguments": {
+            "device_id": "power_meter"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "power_meter",
+          "type": "sensor",
+          "status": "18.5",
+          "timestamp": "2025-04-26T03:11:45"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The current indoor temperature is 18.5°C."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the living room air conditioner, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn off the living room air conditioner.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_ac",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_ac",
+          "type": "device",
+          "status": "Device living_room_ac turned off",
+          "timestamp": "2025-04-26T03:12:00"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room air conditioner is currently turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you close the kitchen blinds completely, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Understood, I will close the kitchen blinds fully.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_blinds",
+            "status": "closed",
+            "level": 100
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_blinds",
+          "type": "device",
+          "status": "Device kitchen_blinds turned closed",
+          "timestamp": "2025-04-26T03:12:16"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen blinds have been closed."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the bathroom light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the bathroom light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bathroom_light",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bathroom_light",
+          "type": "device",
+          "status": "Device bathroom_light turned on",
+          "timestamp": "2025-04-26T03:12:31"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bathroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the bedroom light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn off the bedroom light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned off",
+          "timestamp": "2025-04-26T03:12:46"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light is currently turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you open the living room curtains halfway, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Understood, I will open the living room curtains halfway.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_curtains",
+            "status": "open",
+            "level": 50
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_curtains",
+          "type": "device",
+          "status": "Device living_room_curtains turned open",
+          "timestamp": "2025-04-26T03:13:01"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room curtains have been opened."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen blinds to 75%, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the kitchen blinds to 75%.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_blinds",
+            "status": "on",
+            "level": 75
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_blinds",
+          "type": "device",
+          "status": "Device kitchen_blinds turned on",
+          "timestamp": "2025-04-26T03:13:17"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen blinds have been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the air purifier in the bedroom, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the air purifier in the bedroom.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_air_purifier",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_air_purifier",
+          "type": "device",
+          "status": "Device bedroom_air_purifier turned on",
+          "timestamp": "2025-04-26T03:13:32"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom air purifier has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you check if the living room TV is on, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "I'll check the status of the living room TV.",
+          "type": "tool",
+          "name": "get_status",
+          "arguments": {
+            "device_id": "living_room_tv"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "sensor",
+          "status": "18.9",
+          "timestamp": "2025-04-26T03:13:46"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The indoor temperature is currently 18.9°C."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the kitchen blind, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll close the kitchen blind.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_blind",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_blind",
+          "type": "device",
+          "status": "Device kitchen_blind turned off",
+          "timestamp": "2025-04-26T03:14:02"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen blind has been turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the hallway light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the hallway light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "hallway_light",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "hallway_light",
+          "type": "device",
+          "status": "Device hallway_light turned on",
+          "timestamp": "2025-04-26T03:14:17"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The hallway light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room curtains to 30% open, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the living room curtains to 30% open.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_curtains",
+            "status": "on",
+            "level": 30
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_curtains",
+          "type": "device",
+          "status": "Device living_room_curtains turned on",
+          "timestamp": "2025-04-26T03:14:31"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room curtains have been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the bathroom window, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn off the bathroom window.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bathroom_window",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bathroom_window",
+          "type": "device",
+          "status": "Device bathroom_window turned off",
+          "timestamp": "2025-04-26T03:14:46"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bathroom window is currently turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the bedroom air conditioner, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the bedroom air conditioner.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_ac",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_ac",
+          "type": "device",
+          "status": "Device bedroom_ac turned on",
+          "timestamp": "2025-04-26T03:15:01"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom air conditioner has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the main air purifier, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn off the main air purifier.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "main_air_purifier",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "main_air_purifier",
+          "type": "device",
+          "status": "Device main_air_purifier turned off",
+          "timestamp": "2025-04-26T03:15:17"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The main air purifier is currently turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you check if the rain sensor detects any precipitation, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Checking the rain sensor for precipitation.",
+          "type": "tool",
+          "name": "get_status",
+          "arguments": {
+            "device_id": "outdoor_rain_sensor"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "outdoor_rain_sensor",
+          "type": "sensor",
+          "status": "29.8",
+          "timestamp": "2025-04-26T03:15:34"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The outdoor temperature is currently 29.8°C."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the living room light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the living room light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_light",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_light",
+          "type": "device",
+          "status": "Device living_room_light turned on",
+          "timestamp": "2025-04-26T03:15:48"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom light to 50% brightness, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the bedroom light to 50% brightness.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": 50
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on",
+          "timestamp": "2025-04-26T03:16:04"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen light to 80% brightness, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll adjust the kitchen light brightness to 80%.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_light",
+            "status": "on",
+            "level": 80
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_light",
+          "type": "device",
+          "status": "Device kitchen_light turned on",
+          "timestamp": "2025-04-26T03:16:19"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you adjust the living room curtains to let in a little more light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the living room curtains to let in more light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_curtains",
+            "status": "open",
+            "level": 50
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_curtains",
+          "type": "device",
+          "status": "Device living_room_curtains turned open",
+          "timestamp": "2025-04-26T03:16:34"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room curtains have been opened."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the bedroom window, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will close the bedroom window.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_window",
+            "status": "closed"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_window",
+          "type": "device",
+          "status": "Device bedroom_window turned closed",
+          "timestamp": "2025-04-26T03:16:50"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom window is now closed."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the air purifier in the kitchen, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn on the air purifier in the kitchen.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_air_purifier",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_air_purifier",
+          "type": "device",
+          "status": "Device kitchen_air_purifier turned on",
+          "timestamp": "2025-04-26T03:17:07"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen air purifier has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room TV volume to 30%, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the living room TV volume to 30%.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_tv",
+            "status": "on",
+            "level": 30
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "device",
+          "status": "Device living_room_tv turned on",
+          "timestamp": "2025-04-26T03:17:22"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room TV has been successfully turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the hallway light to 40% brightness, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the hallway light brightness to 40%.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "hallway_light",
+            "status": "on",
+            "level": 40
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "hallway_light",
+          "type": "device",
+          "status": "Device hallway_light turned on",
+          "timestamp": "2025-04-26T03:17:36"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The hallway light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom light to 75% brightness, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the bedroom light brightness to 75%.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": 75
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on",
+          "timestamp": "2025-04-26T03:17:51"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the bathroom light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn on the bathroom light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bathroom_light",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bathroom_light",
+          "type": "device",
+          "status": "Device bathroom_light turned on",
+          "timestamp": "2025-04-26T03:18:07"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bathroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen light to 60% brightness, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the kitchen light brightness to 60%.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_light",
+            "status": "on",
+            "level": 60
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_light",
+          "type": "device",
+          "status": "Device kitchen_light turned on",
+          "timestamp": "2025-04-26T03:18:23"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the living room TV, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn off the living room TV.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_tv",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "device",
+          "status": "Device living_room_tv turned off",
+          "timestamp": "2025-04-26T03:18:38"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room TV is now turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room AC to 23 degrees, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Setting the living room AC to 23 degrees.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_ac",
+            "status": "on",
+            "level": 23
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_ac",
+          "type": "device",
+          "status": "Device living_room_ac turned on",
+          "timestamp": "2025-04-26T03:18:53"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room air conditioner has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you open the bathroom window slightly, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll open the bathroom window slightly.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bathroom_window",
+            "status": "open",
+            "level": "slightly"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bathroom_window",
+          "type": "device",
+          "status": "Device bathroom_window turned open",
+          "timestamp": "2025-04-26T03:19:08"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bathroom window is now open."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the bedroom light at full brightness, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn on the bedroom light at full brightness.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": 100
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on",
+          "timestamp": "2025-04-26T03:19:23"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen light to 40% brightness, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the kitchen light brightness to 40%.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_light",
+            "status": "on",
+            "level": 40
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_light",
+          "type": "device",
+          "status": "Device kitchen_light turned on",
+          "timestamp": "2025-04-26T03:19:41"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom light to a warm glow, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the bedroom light to a warm glow.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": "warm"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on",
+          "timestamp": "2025-04-26T03:19:57"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the ceiling fan in the bedroom, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn on the ceiling fan in the bedroom.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_ceiling_fan",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_ceiling_fan",
+          "type": "device",
+          "status": "Device bedroom_ceiling_fan turned on",
+          "timestamp": "2025-04-26T03:20:14"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom ceiling fan has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you dim the living room light to 30%, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will dim the living room light to 30%.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_light",
+            "status": "dim",
+            "level": 30
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_light",
+          "type": "device",
+          "status": "Device living_room_light turned dim",
+          "timestamp": "2025-04-26T03:20:30"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room light has been dimmed."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen blinds to let in some morning light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the kitchen blinds to let in morning light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_blinds",
+            "status": "open",
+            "level": 50
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_blinds",
+          "type": "device",
+          "status": "Device kitchen_blinds turned open",
+          "timestamp": "2025-04-26T03:20:45"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen blinds have been opened."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the living room TV, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I will turn off the living room TV.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_tv",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "device",
+          "status": "Device living_room_tv turned off",
+          "timestamp": "2025-04-26T03:21:01"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room TV is now turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room curtains to let in some fresh air, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "I'll adjust the living room curtains to let in fresh air.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_curtains",
+            "status": "partially_open",
+            "level": 50
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_curtains",
+          "type": "device",
+          "status": "Device living_room_curtains turned partially_open",
+          "timestamp": "2025-04-26T03:21:17"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room curtains are now partially open."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the kitchen light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn off the kitchen light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_light",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_light",
+          "type": "device",
+          "status": "Device kitchen_light turned off",
+          "timestamp": "2025-04-26T03:21:30"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen light is currently turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom air conditioner to 18 degrees, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Setting the bedroom air conditioner to 18 degrees.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_ac",
+            "status": "on",
+            "level": 18
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_ac",
+          "type": "device",
+          "status": "Device bedroom_ac turned on",
+          "timestamp": "2025-04-26T03:21:46"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom air conditioner has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the bedroom fan, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the bedroom fan.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_fan",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_fan",
+          "type": "device",
+          "status": "Device bedroom_fan turned on",
+          "timestamp": "2025-04-26T03:22:02"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom fan has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room curtains to let in a bit more sunlight, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the living room curtains to let in more sunlight.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_curtains",
+            "status": "partially_open",
+            "level": 60
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_curtains",
+          "type": "device",
+          "status": "Device living_room_curtains turned partially_open",
+          "timestamp": "2025-04-26T03:22:16"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room curtains are now partially open."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room TV volume to 50%, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the living room TV volume to 50%.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_tv",
+            "status": "on",
+            "level": 50
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "device",
+          "status": "Device living_room_tv turned on",
+          "timestamp": "2025-04-26T03:22:32"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room TV has been successfully turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen light to a soft warm tone, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the kitchen light to a soft warm tone.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_light",
+            "status": "on",
+            "level": "warm_soft"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_light",
+          "type": "device",
+          "status": "Device kitchen_light turned on",
+          "timestamp": "2025-04-26T03:22:50"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn off the bedroom air purifier, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll turn off the bedroom air purifier.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_air_purifier",
+            "status": "off"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_air_purifier",
+          "type": "device",
+          "status": "Device bedroom_air_purifier turned off",
+          "timestamp": "2025-04-26T03:23:05"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom air purifier is currently turned off."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room TV to mute, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will mute the living room TV.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_tv",
+            "status": "mute"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "device",
+          "status": "Device living_room_tv turned mute",
+          "timestamp": "2025-04-26T03:23:19"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room TV has been muted."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room curtains to block out the sunlight completely, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Understood, I will adjust the living room curtains to block all sunlight.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_curtains",
+            "status": "closed",
+            "level": 100
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_curtains",
+          "type": "device",
+          "status": "Device living_room_curtains turned closed",
+          "timestamp": "2025-04-26T03:23:35"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room curtains have been closed."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom light on full, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Setting the bedroom light on full.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": "100"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on at 100",
+          "timestamp": "2025-04-26T03:23:50"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on at 100 brightness."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room TV to channel 5, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll change the living room TV to channel 5.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_tv",
+            "status": "on",
+            "channel": 5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "device",
+          "status": "Device living_room_tv turned on",
+          "timestamp": "2025-04-26T03:24:05"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room TV has been successfully turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room AC to 22 degree, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Setting the living room AC to 22 degree.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_ac",
+            "status": "on",
+            "level": 22
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_ac",
+          "type": "device",
+          "status": "Device living_room_ac turned on at 22",
+          "timestamp": "2025-04-26T03:24:20"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room air conditioner has been turned on at 22 degree."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen light to a dim evening glow, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the kitchen lights for a cozy evening glow.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_lights",
+            "status": "on",
+            "level": 30
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_lights",
+          "type": "device",
+          "status": "Device kitchen_lights turned on",
+          "timestamp": "2025-04-26T03:24:36"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen lights have been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom light to a cozy warm tone, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the bedroom light to a warm tone for a cozy atmosphere.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": "warm"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on",
+          "timestamp": "2025-04-26T03:24:53"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen blinds to let in just a little bit of light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the kitchen blinds to let in a little light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_blinds",
+            "status": "partially_open",
+            "level": 25
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_blinds",
+          "type": "device",
+          "status": "Device kitchen_blinds turned partially_open",
+          "timestamp": "2025-04-26T03:25:08"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen blinds are currently partially open."
+        }
+      }
+    ]
+  },
+
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room TV to the news channel, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll change the living room TV to the news channel.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_tv",
+            "status": "on",
+            "channel": "news"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "device",
+          "status": "Device living_room_tv turned on",
+          "timestamp": "2025-04-26T03:25:40"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room TV has been successfully turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom light to a relaxing dim, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the bedroom light to a relaxing dim level.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": 30
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on",
+          "timestamp": "2025-04-26T03:26:41"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen blinds to let in a soft morning glow, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the kitchen blinds for a soft morning glow.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_blinds",
+            "status": "partial",
+            "level": 30
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_blinds",
+          "type": "device",
+          "status": "Device kitchen_blinds turned partial",
+          "timestamp": "2025-04-26T03:27:31"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen blinds have been partially opened."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom air conditioner to 21 degrees, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Setting the bedroom air conditioner to 21 degrees.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_ac",
+            "status": "on",
+            "level": 21
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_ac",
+          "type": "device",
+          "status": "Device bedroom_ac turned on",
+          "timestamp": "2025-04-26T03:27:46"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom air conditioner has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room curtains to let in a bit of breeze, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the living room curtains for a light breeze.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_curtains",
+            "status": "partially_open",
+            "level": 30
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_curtains",
+          "type": "device",
+          "status": "Device living_room_curtains turned partially_open",
+          "timestamp": "2025-04-26T03:28:01"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room curtains are now partially open."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room light to a soft warm glow, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the living room lights to a soft warm glow.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_light",
+            "status": "on",
+            "level": "warm_glow"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_light",
+          "type": "device",
+          "status": "Device living_room_light turned on",
+          "timestamp": "2025-04-26T03:28:16"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you turn on the living room fan, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will turn on the living room fan.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_fan",
+            "status": "on"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_fan",
+          "type": "device",
+          "status": "Device living_room_fan turned on",
+          "timestamp": "2025-04-26T03:28:33"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room fan has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom light to a reading-friendly brightness, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the bedroom light to a comfortable reading level.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": 60
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on",
+          "timestamp": "2025-04-26T03:28:48"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen light to a bright setting for cooking, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Setting the kitchen light to a bright level for cooking.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_light",
+            "status": "on",
+            "level": "bright"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_light",
+          "type": "device",
+          "status": "Device kitchen_light turned on",
+          "timestamp": "2025-04-26T03:29:03"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room light to a comfortable evening brightness, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the living room lights for a comfortable evening setting.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_lights",
+            "status": "on",
+            "level": 50
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_lights",
+          "type": "device",
+          "status": "Device living_room_lights turned on",
+          "timestamp": "2025-04-26T03:29:19"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room lights have been successfully turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom light to 75 persent, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Setting the bedroom light to 75 persent.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": "nightlight"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on at 75 persent",
+          "timestamp": "2025-04-26T03:29:34"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on at 75 persent."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the kitchen blinds to let in some afternoon light, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the kitchen blinds for afternoon light.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "kitchen_blinds",
+            "status": "open",
+            "level": "50%"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "kitchen_blinds",
+          "type": "device",
+          "status": "Device kitchen_blinds turned open",
+          "timestamp": "2025-04-26T03:29:50"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The kitchen blinds have been opened."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room light to a relaxing dim, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Sure, I'll dim the living room lights for a relaxing atmosphere.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_light",
+            "status": "on",
+            "level": 30
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_light",
+          "type": "device",
+          "status": "Device living_room_light turned on",
+          "timestamp": "2025-04-26T03:30:06"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room light to a cozy warm tone, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the living room lights to a warm tone for a cozy atmosphere.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_lights",
+            "status": "on",
+            "level": "warm"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_lights",
+          "type": "device",
+          "status": "Device living_room_lights turned on",
+          "timestamp": "2025-04-26T03:30:21"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room lights have been successfully turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom light to a gentle sunrise glow, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the bedroom light to a gentle sunrise glow.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": "sunrise_glow"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on",
+          "timestamp": "2025-04-26T03:30:37"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the living room TV to the movie channel, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "OK, I will set the living room TV to the movie channel.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "living_room_tv",
+            "status": "on",
+            "channel": "movie"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "living_room_tv",
+          "type": "device",
+          "status": "Device living_room_tv turned on",
+          "timestamp": "2025-04-26T03:30:55"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The living room TV has been successfully turned on."
+        }
+      }
+    ]
+  },
+  {
+    "type": "instruct",
+    "conversations": [
+      {
+        "from": "user",
+        "content": "Could you set the bedroom light to a soft moonlight glow, please?"
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "Adjusting the bedroom light to a soft moonlight glow.",
+          "type": "tool",
+          "name": "control_device",
+          "arguments": {
+            "device_id": "bedroom_light",
+            "status": "on",
+            "level": "moonlight"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "feedback",
+    "conversations": [
+      {
+        "from": "tool",
+        "content": {
+          "id": "bedroom_light",
+          "type": "device",
+          "status": "Device bedroom_light turned on",
+          "timestamp": "2025-04-26T03:31:10"
+        }
+      },
+      {
+        "from": "assistant",
+        "content": {
+          "message": "The bedroom light has been turned on."
+        }
+      }
+    ]
+  }
+]

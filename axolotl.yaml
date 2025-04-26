@@ -1,0 +1,46 @@
+base_model: ./qwen
+tokenizer_path: ./qwen
+model_type: AutoModelForCausalLM
+
+load_in_4bit: true
+strict: false
+adapter: qlora
+
+datasets:
+  - path: ./qwen_chatml.json
+    type: completion
+    field: text
+
+dataset_prepared_path: ./prepared
+val_set_size: 0.02
+
+sequence_len: 2048
+sample_packing: true
+
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+
+lr_scheduler: cosine
+lr: 2e-4
+train_batch_size: 1
+micro_batch_size: 1
+gradient_accumulation_steps: 8
+eval_batch_size: 1
+epochs: 3
+warmup_steps: 20
+
+optimizer: paged_adamw_32bit
+gradient_checkpointing: true
+logging_steps: 10
+flash_attention: false
+save_steps: 100
+evals_per_epoch: 1
+output_dir: ./qwen_1.5b_lora_out
+
+wandb_project: qwen-distill

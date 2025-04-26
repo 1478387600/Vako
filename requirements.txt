@@ -1,0 +1,7 @@
+transformers==4.37.2
+langchain==0.1.12
+langchain-community==0.0.24
+Pillow==10.2.0
+matplotlib==3.8.3
+ffmpeg-python==0.2.0
+ipykernel
